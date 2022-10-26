@@ -1,5 +1,5 @@
 .paint-canvas {
-  border: 1px black solid;
+  border: 3px black solid;
   display: block;
   margin: 1rem;
 }
@@ -15,8 +15,12 @@ button{
 
 #borrar{
   display: flex;
+  border: 2px solid black;
+  width: 40px;
+  height: 40px;
   align-items:center;
   justify-content: center;
+  font-weight: bold;
   gap:5px;
 }
 
@@ -26,4 +30,34 @@ button{
 
 #borrar:hover{
   cursor: pointer;
+}
+
+#borrador{
+  display: flex;
+  border: 2px solid black;
+  width: 40px;
+  height: 40px;
+  align-items:center;
+  justify-content: center;
+  font-weight: bold;
+  gap:5px;
+}
+
+#borrador i{
+  color:rgb(217, 40, 164);
+}
+
+#lapiz{
+  display: flex;
+  border: 2px solid black;
+  width: 40px;
+  height: 40px;
+  align-items:center;
+  justify-content: center;
+  font-weight: bold;
+  gap:5px;
+}
+
+#lapiz i{
+  color:rgba(238, 165, 7, 0.85);
 }

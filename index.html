@@ -20,14 +20,25 @@
   
   <section>
     <input type="range" class="js-line-range" min="1" max="72" value="1">
-    <label class="js-range-value">1</label>Px
+    <label class="js-range-value">1 </label>Px
   </section>
 
 <canvas class="js-paint  paint-canvas" width="600" height="300"></canvas>
+  
   <button id="borrar" type="button"> 
-    <p> Borrar </p> 
+
     <i class="fa-solid fa-trash"></i>
   </button>
+
+  <button id="borrador" type="button"> 
+    
+    <i class="fa-solid fa-eraser"></i>
+  </button>
+  
+  <button id="lapiz" type="button"> 
+    
+    <i class="fa-solid fa-pencil"></i>
+
 </body>
 
 
@@ -38,9 +49,16 @@
   const context = paintCanvas.getContext( '2d' );
   context.lineCap = 'round';
 
+  const procesarModoBorrar = function(event){
+    context.globalCompositeOperation = 'destination-out';
+  }
 
   const procesarClickBorrar = function(event){
     context.clearRect(0, 0, paintCanvas.clientWidth, paintCanvas.clientHeight);
+  }
+
+  const procesarModoLapiz = function(event){
+    context.globalCompositeOperation = 'source-over';
   }
 
   const colorPicker = document.querySelector( '.js-color-picker');
@@ -95,5 +113,11 @@
 
   const borrarCanvasButton = document.querySelector( '#borrar');
   borrarCanvasButton.addEventListener( 'click', procesarClickBorrar);
+
+  const borradorCanvasButton = document.querySelector( '#borrador');
+  borradorCanvasButton.addEventListener( 'click', procesarModoBorrar);
+
+  const lapizCanvasButton = document.querySelector( '#lapiz');
+  lapizCanvasButton.addEventListener( 'click', procesarModoLapiz);
 </script>
 </html>
