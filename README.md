@@ -1,11 +1,4 @@
 # DILab_2023-1
 Diseño de Interfaces FC
 
-# Código Base del Canvas
-
-Código mínimo para probar un componente canvas.
-
-## Ejercicios de clase
-
-* Agrega una manera de limpiar todo lo dibujado en el canvas (completado) 25/10/2022
-* Tarea canvas: Pincel de borrado (completado) 25/10/2022
+![githubUI](https://user-images.githubusercontent.com/30502834/197930302-46b8bed1-35ed-4c6a-accf-711e0d4c2eb4.png)
